@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Novo Produto</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="header">
+            <h2>Novo Produto</h2>
+        </section>
+
+        <form id="product-registration-form" class="form">
+            <div class="form-content">
+                <label for="nomeProduto">Nome do Produto</label>
+                <input type="text" id="nomeProduto" name="nomeProduto" placeholder="Digite o nome do produto">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-content">
+                <label for="descricao">Descrição</label>
+                <input type="text" id="descricao" name="descricao" placeholder="Digite a descrição do novo produto">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-content">
+                <label for="preco">Preço</label>
+                <input type="text" id="preco" name="preco" placeholder="R$ 00,00">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-content">
+                <label for="codigobarras">Código de Barras</label>
+                <input type="text" id="codigobarras" name="codigobarras" placeholder="Digite o código de barras">
+                <span class="error-message"></span>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="form-content">
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria" name="categoria">
+                        <option value="">Selecione a categoria</option>
+                    </select>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-content">
+                    <label for="estoque">Estoque</label>
+                    <div class="quantity-selector">
+                        <button type="button" id="decrement">-</button>
+                        <input type="text" id="estoque" name="estoque" value="1" min="1" readonly>
+                        <button type="button" id="increment">+</button>
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit">Criar</button>
+                <button type="button" onclick="window.location.href='./admin.html'">Voltar</button>
+            </div>
+        </form>
+
+        <!-- Inclua apenas um dos scripts principais, por exemplo: -->
+        <script type="module" src="./js/main.js"></script>
+        <script type="module" src="./js/produtos/product.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Nova Conta</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="header">
+            <h2>Nova Conta</h2>
+        </section>
+
+        <form id="user-registration-form" class="form">
+            <div class="form-content">
+                <label for="username">Nome do usuário</label>
+                <input type="text" id="username" name="username" placeholder="Digite o nome do usuário">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-content">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Digite o seu email">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-content">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Digite o seu endereço">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-content">
+                <label for="celular">Celular</label>
+                <input type="text" id="celular" name="celular" placeholder="Digite o seu celular">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-content">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-content">
+                <label for="senhaConfirmacao">Confirme sua senha</label>
+                <input type="password" id="senhaConfirmacao" name="senhaConfirmacao"
+                    placeholder="Digite sua senha novamente">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit">Criar</button>
+                <button type="button" onclick="window.location.href='./escolhaConta.html'">Voltar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Referência para o arquivo main.js com a configuração do formulário -->
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

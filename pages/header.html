@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="header-inner-content">
+            <img href="./index.html" src="./imgs/logoPucFarma.png" alt="Logo da Farmácia" />
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#novos-produtos">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon-container">
+                <a href="./carrinho.html"><img src="./imgs/cart.png" alt="Carrinho" /></a>
+                <!-- Ícone de login (exibido quando o usuário não está logado) -->
+                <a id="loginIcon" href="./escolhaConta.html"><img src="./imgs/logar.png" alt="Logar" /></a>
+                <!-- Ícone de perfil (exibido quando o usuário está logado) -->
+                <a id="profileIcon" href="" class="hidden"><img src="./imgs/profile.png" alt="Perfil" /></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Login -->
+    <div id="loginModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+            <p id="loginMessage"></p>
+        </div>
+    </div>
+
+<script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

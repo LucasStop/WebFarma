@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="./css/carrinho.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <script>
+        // Carrega o header de um arquivo externo
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+
+    <div class="container">
+        <header>
+            <h1>Carrinho de Compras</h1>
+        </header>
+        <main>
+            <div class="cart-item">
+                <img src="imagem-produto.jpg" alt="Imagem do Produto" class="product-image">
+                <div class="product-info">
+                    <h2 class="product-title">Nome do Produto</h2>
+                    <p class="product-description">Descrição breve do produto vai aqui.</p>
+                    <p class="product-price">R$ 99,99</p>
+                    <div class="product-rating">
+                        <span>Avaliação:</span>
+                        <span class="rating">★★★★☆</span>
+                    </div>
+                    <p class="product-quantity">Quantidade: 1</p>
+                </div>
+                <button class="remove-button">Remover</button>
+            </div>
+            <div class="cart-summary">
+                <h2>Total</h2>
+                <p class="total-price">R$ 99,99</p>
+                <button class="checkout-button">Finalizar Compra</button>
+            </div>
+        </main>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Carrinho de Compras</h1>
+        </header>
+        <main>
+            <div class="cart-item">
+                <img src="imagem-produto.jpg" alt="Imagem do Produto" class="product-image">
+                <div class="product-info">
+                    <h2 class="product-title">Nome do Produto</h2>
+                    <p class="product-description">Descrição breve do produto vai aqui.</p>
+                    <p class="product-price">R$ 99,99</p>
+                    <div class="product-rating">
+                        <span>Avaliação:</span>
+                        <span class="rating">★★★★☆</span>
+                    </div>
+                    <p class="product-quantity">Quantidade: 1</p>
+                </div>
+                <button class="remove-button">Remover</button>
+            </div>
+            <div class="cart-summary">
+                <h2>Total</h2>
+                <p class="total-price">R$ 99,99</p>
+                <button class="checkout-button">Finalizar Compra</button>
+            </div>
+        </main>
+    </div>
+    <footer class="azul-background">
+        <div class="page-inner-content footer-content">
+            <div class="download-options">
+                <p>Baixe nossa aplicação.</p>
+                <p>Baixe nossa aplicação para Android e iOS.</p>
+                <div>
+                    <img src="./imgs/app-store.png" alt="" />
+                    <img src="./imgs/app-store.png" alt="" />
+                </div>
+            </div>
+
+            <div class="logo-footer">
+                <h1 class="logo">Famárcia<span>Store</span></h1>
+                <p>O nosso objetivo é fornecer medicamentos e produtos de saúde para tratar e prevenir doenças, promover
+                    o bem-estar e melhorar a qualidade de vida das pessoas.</p>
+            </div>
+
+            <div class="links-footer">
+                <h3>Links</h3>
+                <ul>
+                    <li>Cupons</li>
+                    <li>Blog</li>
+                    <li>Políticas</li>
+                    <li>Torne-se afiliado</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="page-inner-content" />
+        <div class="page-inner-content copyright">
+            <p>copyright 2024 - Mickaell Nascimento - Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+
+</html>

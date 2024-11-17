@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Categoria</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="header">
+            <h2>Nova Categoria</h2>
+        </section>
+
+        <form id="form" class="form" onsubmit="return checkForm();">
+            <div class="form-content">
+                <label for="username">Nome da Categoria</label>
+                <input type="text" id="nomeCategoria" name="nomeCategoria" placeholder="Digite o nome da Categoria">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit">Criar</button>
+                <button type="button" onclick="window.location.href='./admin.html'">Voltar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Referência para o arquivo functions.js com a validação -->
+    <script src="./js/functions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <script>
+        // Carrega o header de um arquivo externo
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+
+    <div class="header-inner-content">
+        <div class="header-bottom-side">
+            <div class="header-bottom-side-left">
+                <h2>Está com dor de cabeça?</h2>
+                <p>Os analgésicos, como o paracetamol (Tylenol) ou a dipirona (Novalgina), são remédios indicados para
+                    dor de cabeça, pois que agem inibindo a produção de substâncias no cérebro responsáveis pela dor,
+                    como as prostaglandinas ou ciclooxigenases. Veja como tomar corretamente o paracetamol ou a dipirona
+                </p>
+                <button>Ver agora</button>
+                <div class="header-bottom-side-right">
+                    <img src="./imgs/tylenol.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Main-->
+    <main>
+        <div class="azul-background">
+            <div class="page-inner-content">
+                <div class="cols cols-3">
+                    <img src="./imgs/nimesulida.png" alt="" />
+                    <img src="./imgs/paracetamol-novo.png" alt="" />
+                    <img src="./imgs/strepfen-novo.png" alt="" />
+                </div>
+            </div>
+        </div>
+
+        <div class="page-inner-content">
+            <h3 class="section-title" id="novos-produtos">Novos Produtos</h3>
+            <div class="subtitle-underline"></div>
+            <div class="cols cols-4">
+                <div class="product">
+                    <img src="./imgs/nimesulida.png" alt="" />
+                    <p class="product-name">Nimesulida CX 100 mg</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <p class="product-price">R$:20,00</p>
+                </div>
+                <div class="product">
+                    <img src="./imgs/paracetamol-novo.png" alt="" />
+                    <p class="product-name">Paracetamol CX 750 mg</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="product-price">R$:27,00</p>
+                </div>
+                <div class="product">
+                    <img src="./imgs/strepfen.png" alt="" />
+                    <p class="product-name">Strepfen CX 16 pastilhas</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                    <p class="product-price">R$:12,00</p>
+                </div>
+                <div class="product">
+                    <img src="./imgs/neosaldina-novo.png" alt="" />
+                    <p class="product-name">Neosaldina CX 300 mg</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <p class="product-price">R$:32,90</p>
+                </div>
+            </div>
+        </div>
+        <div class="page-inner-content">
+            <h3 class="section-title">Medicamentos</h3>
+            <div class="subtitle-underline"></div>
+            <div class="cols cols-4">
+                <div class="product">
+                    <img src="./imgs/nimesulida.png" alt="" />
+                    <p class="product-name">Nimesulida CX 100 mg</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <p class="product-price">R$:20,00</p>
+                </div>
+                <div class="product">
+                    <img src="./imgs/paracetamol-novo.png" alt="" />
+                    <p class="product-name">Paracetamol CX 750 mg</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="product-price">R$:27,00</p>
+                </div>
+                <div class="product">
+                    <img src="./imgs/strepfen.png" alt="" />
+                    <p class="product-name">Strepfen CX 16 pastilhas</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                    <p class="product-price">R$:12,00</p>
+                </div>
+                <div class="product">
+                    <img src="./imgs/neosaldina-novo.png" alt="" />
+                    <p class="product-name">Neosaldina CX 300 mg</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <p class="product-price">R$:32,90</p>
+                </div>
+                <div class="product">
+                    <img src="./imgs/omeprazol.png" alt="" />
+                    <p class="product-name">Omeprazol CX 20 mg</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <p class="product-price">R$:20,00</p>
+                </div>
+                <div class="product">
+                    <img src="./imgs/histamin.png" alt="" />
+                    <p class="product-name">Paracetamol CX 2 mg / 5 ml</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="product-price">R$:27,00</p>
+                </div>
+                <div class="product">
+                    <img src="./imgs/dorflex.png" alt="" />
+                    <p class="product-name">Dorflex CX 36 comprimidos</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                    <p class="product-price">R$:12,00</p>
+                </div>
+                <div class="product">
+                    <img src="./imgs/naratrptana.png" alt="" />
+                    <p class="product-name">Naratrptana CX 2.5 mg</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <p class="product-price">R$:32,90</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="azul-background">
+            <div class="header-inner-content">
+                <div class="header-bottom-side exclusive-container">
+                    <div class="header-bottom-side-left">
+                        <h2>Precisa de anti-inflamatório?</h2>
+                        <p>Salonpas® é uma linha de analgésicos e anti-inflamatórios de uso tópico que fornece uma dose
+                            específica de medicação através da pele. Cada produto da linha (adesivo, gel e aerossol),
+                            contém ou pode conter ingredientes ativos, tais como: salicilato de metila, levomentol,
+                            salicilato de etilenoglicol e cânfora.</p>
+                        <button>Ver agora</button>
+                        <div class="header-bottom-side-right">
+                            <img src="./imgs/salonpas-novo.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-inner-content">
+            <div class="testemonials">
+                <div class="testimonial">
+                    <p>"</p>
+                    <p>A farmácia oferece uma boa variedade de medicamentos, produtos de higiene pessoal e cosméticos. É
+                        possível encontrar marcas conhecidas e também produtos mais específicos. No entanto, em algumas
+                        ocasiões, percebi que certos itens não estavam disponíveis, o que pode ser um ponto a melhorar.
+                    </p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <p>Mickaell Nascimento</p>
+                </div>
+                <div class="testimonial">
+                    <p>"</p>
+                    <p>Os preços são, em geral, competitivos, mas em alguns casos podem ser um pouco mais altos
+                        comparados a outras farmácias da região. É sempre bom conferir se há promoções ou descontos, que
+                        podem ajudar a economizar.</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <p>Lucas Stopmaluco</p>
+                </div>
+                <div class="testimonial">
+                    <p>"</p>
+                    <p>No geral, a FarmáciaStore é um bom lugar para adquirir medicamentos e produtos de saúde. O
+                        excelente atendimento e a boa organização compensam eventuais pequenos pontos negativos, como a
+                        variação de preços e a disponibilidade de alguns itens. Recomendo a farmácia e continuarei a
+                        utilizá-la para minhas necessidades diárias.</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <p>Nome génerio de santo</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="azul-background">
+        <div class="page-inner-content footer-content">
+            <div class="download-options">
+                <p>Baixe nossa aplicação.</p>
+                <p>Baixe nossa aplicação para Android e iOS.</p>
+                <div>
+                    <img src="./imgs/play-store.png" alt="" />
+                    <img src="./imgs/app-store.png" alt="" />
+                </div>
+            </div>
+
+            <div class="logo-footer">
+                <h1 class="logo">Famárcia<span>Store</span></h1>
+                <p>O nosso objetivo é fornecer medicamentos e produtos de saúde para tratar e prevenir doenças, promover
+                    o bem-estar e melhorar a qualidade de vida das pessoas.</p>
+            </div>
+
+            <div class="links-footer">
+                <h3>Links</h3>
+                <ul>
+                    <li>Cupons</li>
+                    <li>Blog</li>
+                    <li>Políticas</li>
+                    <li>Torne-se afiliado</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="page-inner-content" />
+        <div class="page-inner-content copyright">
+            <p>copyright 2024 - Mickaell Nascimento - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.querySelector(".navabr");
+        const menuButton = document.querySelector(".menu-buttom");
+        menuButton.addEventListener('click', () => {
+            navbar.classList.toggle("show-menu");
+        });
+    </script>
+</body>
+
+</html>

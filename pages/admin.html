@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <script>
+        // Carrega o header de um arquivo externo
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+
+    <!-- Main Content -->
+    <main>
+        <div class="cols cols-3">
+            <!-- Coluna Produtos -->
+            <div class="col">
+                <h3>Produtos</h3>
+                <button type="button" onclick="window.location.href='/novoProduto.html'"
+                    class="action-button">Criar</button>
+                <button type="button" onclick="window.location.href='/atualizaProduto.html'"
+                    class="action-button">Update</button>
+                <button type="button" onclick="window.location.href='/deleteProduto.html'"
+                    class="action-button">Update</button>
+            </div>
+            <!-- Coluna Categoria -->
+            <div class="col">
+                <h3>Categoria</h3>
+                <button type="button" onclick="window.location.href='/novaCategoria.html'"
+                    class="action-button">Criar</button>
+                <button type="button" onclick="window.location.href='/atualizaCategoria.html'"
+                    class="action-button">Update</button>
+                <button type="button" onclick="window.location.href='/deleteCategoria.html'"
+                    class="action-button">Update</button>
+            </div>
+            <!-- Coluna Usuários -->
+            <div class="col">
+                <h3>Usuários</h3>
+                <button type="button" onclick="window.location.href='/novoUsuario.html'"
+                    class="action-button">Criar</button>
+                <button type="button" onclick="window.location.href='/atualizaUsuario.html'"
+                    class="action-button">Update</button>
+                <button type="button" onclick="window.location.href='/deleteUsuario.html'"
+                    class="action-button">Update</button>
+            </div>
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="header">
+            <h2>Login do Usuário</h2>
+        </section>
+
+        <form id="user-login-form" class="form">
+            <div class="form-content">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite o seu email:" required>
+                <span class="error-message" id="email-error"></span>
+            </div>
+            <div class="form-content">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Digite sua senha:" required>
+                <span class="error-message" id="senha-error"></span>
+            </div>
+            <button type="submit">Entrar</button>
+            <button type="button" onclick="window.location.href='./escolhaConta.html'">Voltar</button>
+        </form>
+    </div>
+
+<script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
